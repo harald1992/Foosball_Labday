@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import logo from './logo_CapFoosballCup.svg';
 import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
+import { Highscore } from './pages/Highscore';
 import { Reserve } from './pages/Reserve';
 import { Home } from './pages/Home';
 
 export function App() {
   return (
     <>
-      <nav>
-        <ul className="navigation">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/reserve">Reserve</Link></li>
-        </ul>
-      </nav>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reserve" element={<Reserve />} />
+        <Route path="/highscore" element={<Highscore />} />
       </Routes>
+      
+
+      <div>boe</div>    
+
+      <footer class="footer">
+        <nav>
+          <ul className="navigation">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/reserve">Reserve</Link></li>
+            <li><Link to="/highscore">Highscore</Link></li>
+          </ul>
+        </nav> 
+      </footer>
     </>
   )
 }
