@@ -1,3 +1,5 @@
+
+
 import logo from "./logo_CapFoosballCup.svg";
 import faStar from "./star.svg";
 import faCalendarDay from "./calendar-day.svg";
@@ -11,6 +13,9 @@ import { Highscore } from "./pages/Highscore";
 import { Reserve } from "./pages/Reserve";
 import { Home } from "./pages/Home";
 import { AvatarPage } from "./pages/avatar/AvatarPage";
+import { ProfilePage } from './pages/profile/ProfilePage';
+import { UserPage } from './pages/profile/user/UserPage';
+import { TeamPage } from './pages/profile/team/TeamPage';
 
 export function App() {
   return (
