@@ -33,8 +33,7 @@
     cursor: pointer;
     background-image: "../../assets/edit.png";
 }
-.edit-image {
-}
+
 .edit {
     visibility: none;
 }
