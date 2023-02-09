@@ -19,7 +19,7 @@ export const Byline = ({ className, bylineText, storeName }) => {
     };
 
     useEffect(() => {
-        const bylineFromStorage = localStorage.getItem("byline");
+        const bylineFromStorage = localStorage.getItem(storeName);
         if (bylineFromStorage) setByline(bylineFromStorage);
     }, []);
 
