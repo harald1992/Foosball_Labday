@@ -5,8 +5,6 @@ import faCameraRetro from "./camera-retro.svg";
 import faUsers from "./users.svg";
 import faUserFriends from "./assets/user-friends.svg";
 import faSearch from "./assets/search.svg";
-import faChevronRight from "./chevron-right.svg";
-import faChevronLeft from "./chevron-left.svg";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import { Highscore } from "./pages/Highscore";
