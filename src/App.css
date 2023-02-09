@@ -31,38 +31,41 @@ body {
   padding: 20px;
 }
 header {
-  background-color: red;
-  padding:20px;
+  background-color: white;
+  border-bottom: 4px solid #00A41A;
+  padding: 10px 0 0;
 }
-.footer {
-  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-  padding: 20px;
-}
-/* 
 
-* {
-  box-sizing: border-box;
+img {
+  width: 100%;
 }
-body {
-  margin: 0;
-  font: 16px Sans-Serif;
+
+.menu-icon-width {
+  width: 33px;
+  color: white;
 }
-h1 {
-  margin: 0 0 20px 0;
+
+.chevron-icon-width {
+  width: 33px;
 }
-p {
-  margin: 0 0 20px 0;
-} */
+
 ul li {
   float: left;
-  margin-right: 25px;
+  list-style: none;
+  margin: 0 27px 10px -10px;
+  padding: 10px 0 10px 0;
+  background-color: #00A41A;
+  width: 20%;
+  height: 36px;
 }
+
 footer {
-  background: #42A5F5;
+  background: #00A41A;
   color: white;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
