@@ -3,4 +3,12 @@
     flex-direction: row;
 }
 
-.profile-nav {}
+.profile-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-nav>li>a {
+    color: white;
+    text-decoration: none;
+}

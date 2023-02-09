@@ -9,11 +9,7 @@ export const UserPage = () => {
 
     return (
         <div>
-            <ul className={styles["profile-nav"]}>
-                <li>
-                    <Link to="/profile">Back to Profile</Link>
-                </li>
-            </ul>
+
             <h1>{title}</h1>
             <br />
 

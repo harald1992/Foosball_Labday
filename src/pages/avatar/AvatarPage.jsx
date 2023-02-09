@@ -6,7 +6,7 @@ export const AvatarPage = () => {
     return (
         <div className={styles.avatarpage}>
             <Avatar className={styles.avatar} />
-            <Byline
+            Name:     <Byline
                 className={styles.byline}
                 storeName="byline"
                 bylineText="Your Name"
