@@ -6,7 +6,11 @@ export const AvatarPage = () => {
     return (
         <div className={styles.avatarpage}>
             <Avatar className={styles.avatar} />
-            <Byline className={styles.byline} />
+            <Byline
+                className={styles.byline}
+                storeName="byline"
+                bylineText="cool byline"
+            />
         </div>
     );
 };
