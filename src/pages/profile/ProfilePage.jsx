@@ -20,10 +20,10 @@ export const ProfilePage = () => {
 
             <ul className={styles["profile-nav"]} >
                 <li>
-                    <Link to="/user">User <img className="menu-icon-width" src={faUsers} /></Link>
+                    <Link to="/user"><span className={styles.marginright}>User</span> <img className="menu-icon-width" src={faUsers} /></Link>
                 </li>
                 <li>
-                    <Link to="/team">Team <img className="menu-icon-width" src={faUserFriends} />
+                    <Link to="/team"><span className={styles.marginright}>Team</span> <img className="menu-icon-width" src={faUserFriends} />
                     </Link></li>
 
             </ul>
