@@ -9,7 +9,7 @@ export const AvatarPage = () => {
             <Byline
                 className={styles.byline}
                 storeName="byline"
-                bylineText="cool byline"
+                bylineText="Your Name"
             />
         </div>
     );

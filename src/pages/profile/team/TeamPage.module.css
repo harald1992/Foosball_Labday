@@ -1,0 +1,22 @@
+.userpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 82px;
+    /* margin for footer */
+}
+
+.profile-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.teamform {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.teamform>* {
+    margin-bottom: 8px;
+}
