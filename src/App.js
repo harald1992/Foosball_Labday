@@ -14,6 +14,9 @@ import { HighscorePage } from "./pages/highscore/highscorePage";
 import { CompetitionPage } from "./pages/competition/CompetitionPage";
 import { SearchTablePage } from "./pages/search-table/SearchTablePage";
 import { MediaGallery } from "./pages/media/MediaGallery";
+import { ProfilePage } from "./pages/profile/ProfilePage";
+import { UserPage } from "./pages/profile/user/UserPage";
+import { TeamPage } from "./pages/profile/team/TeamPage";
 
 export function App() {
   return (
@@ -30,6 +33,13 @@ export function App() {
           <Route path="/avatar" element={<AvatarPage />} />
           <Route path="/competition" element={<CompetitionPage />} />
           <Route path="/search" element={<SearchTablePage />} />
+
+          <Route path="/reserve" element={<Reserve />} />
+          <Route path="/profile" element={<ProfilePage />} />
+
+          <Route path="/user" element={<UserPage />} />
+          <Route path="/team" element={<TeamPage />} />
+
         </Routes>
       </div>
 
@@ -47,7 +57,7 @@ export function App() {
               </Link>
             </li>
             <li>
-              <Link to="/avatar" className="link">
+              <Link to="/profile" className="link">
                 <img className="menu-icon-width" src={faUsers} />
               </Link>
             </li>
