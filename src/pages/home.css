@@ -1,8 +1,12 @@
+.home {
+    height: 100%;
+    padding: 32px 16px;
+}
+
 .home-header {
     display: flex;
 
 }
-
 
 .home-header div {
     flex-basis: 100%;
@@ -12,7 +16,7 @@
 }
 
 .home-header p {
-    padding: 24px;
+    padding: 12px;
     background: #eee;
     color: #F67600;
     font-size: 24px;
@@ -23,7 +27,7 @@
 .home-header p span{
     color: #777;
     display: block;
-    font-size: 16x;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -34,11 +38,20 @@
     font-size: 24px;
     font-weight: bold;
     border: none;
-    flex-basis: 20px;
+}
+
+.home-header button img {
+    filter: invert(38%) sepia(38%) saturate(6034%) hue-rotate(119deg) brightness(96%) contrast(109%);
+    width: 16px;
 }
 
 .home-header input[type="radio"] {
     display: none;
+}
+
+.home select {
+    width: 100%;
+    padding: 16px;
 }
 
 .home-header input[type="radio"]:checked + label p,
@@ -49,4 +62,16 @@
 
 .home-header p.today {
     outline: 2px solid #00A41A;
+}
+
+.home button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    font-size: 32px;
+    font-weight: 32px;
+    background:  #F67600;
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    margin-top: 32px;
 }

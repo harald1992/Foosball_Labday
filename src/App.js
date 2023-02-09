@@ -3,13 +3,11 @@ import faStar from "./star.svg";
 import faCalendarDay from "./calendar-day.svg";
 import faCameraRetro from "./camera-retro.svg";
 import faUsers from "./users.svg";
-import faChevronRight from "./chevron-right.svg";
-import faChevronLeft from "./chevron-left.svg";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import { Highscore } from "./pages/Highscore";
 import { Reserve } from "./pages/Reserve";
-import { Home } from "./pages/Home";
+import  Home  from "./pages/Home";
 import { AvatarPage } from "./pages/avatar/AvatarPage";
 
 export function App() {
