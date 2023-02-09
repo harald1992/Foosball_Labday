@@ -8,8 +8,6 @@ export const Avatar = ({ className }) => {
     const maxNumber = 69;
 
     const onChange = (imageList) => {
-        // data for submit
-        debugger;
         setSelectedImage(imageList[0].data_url);
         localStorage.setItem("avatar", imageList[0].data_url);
     };
@@ -26,7 +24,6 @@ export const Avatar = ({ className }) => {
             multiple
             value={selectedImage}
             onChange={onChange}
-            onImageUpdate={onChange}
             maxNumber={1}
             dataURLKey="data_url"
         >
@@ -51,7 +48,7 @@ export const Avatar = ({ className }) => {
                         <img
                             className={styles["edit-image"]}
                             src={edit}
-                            onClick={onImageUpdate[0]}
+                            onClick={() => onImageUpdate(0)}
                         />
                     ) : (
                         <img
