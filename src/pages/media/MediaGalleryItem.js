@@ -6,9 +6,6 @@ export const MediaGalleryItem = (props) => {
       <div className={styles.image}>
         <img src={props.url} alt={props.title} />
       </div>
-      <div className={styles.title}>
-        <span>{props.title}</span>
-      </div>
     </div>
   );
 }

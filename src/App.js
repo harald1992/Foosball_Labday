@@ -1,4 +1,4 @@
-import logo from "./assets/logo_CapFoosballCup.svg";
+import logo from "./assets/logo_CapFoosballCup_v2.svg";
 import faStar from "./assets/star.svg";
 import faCalendarDay from "./assets/calendar-day.svg";
 import faCameraRetro from "./assets/camera-retro.svg";

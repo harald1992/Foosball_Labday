@@ -45,8 +45,9 @@
   height: 48px;
   border: 0;
   background-color: #F67600;
-  color: #121212;
+  color: #fff;
   border-radius: 4px;
+  font-weight: bold;
 }
 .upload button:active {
   background-color: #ba5d05;

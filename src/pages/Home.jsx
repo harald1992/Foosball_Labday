@@ -22,7 +22,7 @@ function Day(props) {
     return (
       <div>
         <input type="radio" name="date" id={dates[2]} value={dates[2]} onChange={ changeHandler}  />
-        <label for={dates[2]} >
+        <label htmlFor={dates[2]} >
           <p className={dates[1]}>{dates[0]}<span>{dates[2]}</span></p>
         </label>
       </div>
@@ -40,6 +40,10 @@ function Home() {
     setDate(date);
   } 
 
+  const onReserve = () => {
+    alert(`Reservation made on ${date}, ${time}!`)
+  }
+
   return (
     <main className="home">
       <div className="home-header">
@@ -47,12 +51,12 @@ function Home() {
         {days.map((day, index) => <Day key={index} setDate={setMyDate} offset={day} week={week} /> )}
         <button onClick={() => setWeek(week + 1)}><img src={faChevronRight} alt="Next"/></button>
       </div>
-        <select onChange={(event) => setTime(event.target.value)}>
-            <option value="12:00 - 12:15" selected>12:00 - 12:15</option>
+        <select onChange={(event) => setTime(event.target.value)} value="12:00 - 12:15">
+            <option value="12:00 - 12:15">12:00 - 12:15</option>
             <option value="12:15 - 12:30">12:15 - 12:30</option>
-            <option value="12:30 - 12:45">12:30 - 12:45</option>
+            <option value="12:30 - 12:45" disabled>12:30 - 12:45</option>
             <option value="12:45 - 13:00">12:45 - 13:00</option>
-            <option value="16:30 - 16:45">16:30 - 16:45</option>
+            <option value="16:30 - 16:45" disabled>16:30 - 16:45</option>
             <option value="16:45 - 17:00">16:45 - 17:00</option>   
         </select>
 
@@ -62,9 +66,9 @@ function Home() {
         <p><b>Time:</b> {time}</p>
         </div>
 
-          <button type="submit">
-              Submit 
-          </button>
+        <button type="submit" onClick={onReserve}>
+            Reserve 
+        </button>
     </main>
   );
 }
