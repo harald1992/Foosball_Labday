@@ -4,7 +4,7 @@ import styles from "./CompetitionPage.module.css";
 export const CompetitionPage = () => {
     return (
         <div className={styles.competitionpage}>
-            <h1>competition</h1>
+            <h1>Competition</h1>
             <div className={`${styles.toplevel} ${styles.level}`}>
                 <Byline
                     className={styles.byline}
