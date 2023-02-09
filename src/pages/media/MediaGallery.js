@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './MediaGallery.module.css';
 
-function MediaGallery() {
+export const MediaGallery = () => {
   const [files, setFiles] = useState([]);
   const [url, setUrl] = useState('');
 
@@ -50,6 +50,3 @@ function MediaGalleryUpload(props) {
     </div>
   )
 }
-
-
-export default MediaGallery;

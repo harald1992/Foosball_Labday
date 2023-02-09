@@ -3,7 +3,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import { Reserve } from "./pages/Reserve";
 import { Home } from "./pages/Home";
 import { AvatarPage } from "./pages/avatar/AvatarPage";
-import { MediaGallery } from "./pages/MediaGallery";
+import { MediaGallery } from "./pages/media/MediaGallery";
 
 export function App() {
     return (
