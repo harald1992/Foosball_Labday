@@ -1,30 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
-import { Reserve } from './pages/Reserve';
-import { Home } from './pages/Home';
-import MediaGallery from './pages/MediaGallery';
+import "./App.css";
+import { Link, Route, Routes } from "react-router-dom";
+import { Reserve } from "./pages/Reserve";
+import { Home } from "./pages/Home";
+import { AvatarPage } from "./pages/avatar/AvatarPage";
+import { MediaGallery } from "./pages/MediaGallery";
 
 export function App() {
-  return (
-    <div className="app-container">
-      <nav>
-        <ul className="navigation">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/reserve">Reserve</Link></li>
-          <li><Link to="/media">Wall of shame</Link></li>
-        </ul>
-      </nav>
+    return (
+        <>
+            <nav>
+                <ul className="navigation">
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/reserve">Reserve</Link>
+                    </li>
+                    <li>
+                        <Link to="/avatar">Avatar</Link>
+                    </li>
+                    <li>
+                        <Link to="/media">Wall of Shame</Link>
+                    </li>
+                </ul>
+            </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/reserve" element={<Reserve />} />
-        <Route path="/media" element={<MediaGallery />} />
-      </Routes>
-    </div>
-  )
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/reserve" element={<Reserve />} />
+                <Route path="/avatar" element={<AvatarPage />} />
+                <Route path="/media" element={<MediaGallery />} />
+            </Routes>
+        </>
+    );
 }
-
 
 // function App() {
 //   return (
