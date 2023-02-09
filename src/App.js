@@ -1,27 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
-import { Reserve } from './pages/Reserve';
-import { Home } from './pages/Home';
+import "./App.css";
+import { Link, Route, Routes } from "react-router-dom";
+import { Reserve } from "./pages/Reserve";
+import { Home } from "./pages/Home";
+import { AvatarPage } from "./pages/avatar/AvatarPage";
 
 export function App() {
-  return (
-    <>
-      <nav>
-        <ul className="navigation">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/reserve">Reserve</Link></li>
-        </ul>
-      </nav>
+    return (
+        <>
+            <nav>
+                <ul className="navigation">
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/reserve">Reserve</Link>
+                    </li>
+                    <li>
+                        <Link to="/avatar">Avatar</Link>
+                    </li>
+                </ul>
+            </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/reserve" element={<Reserve />} />
-      </Routes>
-    </>
-  )
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/reserve" element={<Reserve />} />
+                <Route path="/avatar" element={<AvatarPage />} />
+            </Routes>
+        </>
+    );
 }
-
 
 // function App() {
 //   return (

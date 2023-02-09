@@ -1,0 +1,9 @@
+.avatarpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    margin: 10rem;
+}
