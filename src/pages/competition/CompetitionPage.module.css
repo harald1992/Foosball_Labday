@@ -1,11 +1,24 @@
-.avatarpage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh - 160px);
+.competitionpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.avatar {
-  margin-bottom: 1rem;
+.toplevel,
+.secondlevel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 1rem 0;
+}
+.level {
+    border-bottom: 1px solid black;
+}
+.secondlevel {
+    justify-content: space-between;
+}
+.divider {
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
