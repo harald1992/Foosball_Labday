@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/foosball_labday/static/css/main.073c9b0a.css",
-    "main.js": "/foosball_labday/static/js/main.b2837d24.js",
+    "main.css": "/foosball_labday/static/css/main.b278ae3f.css",
+    "main.js": "/foosball_labday/static/js/main.1de26b37.js",
     "static/js/787.02852af1.chunk.js": "/foosball_labday/static/js/787.02852af1.chunk.js",
     "static/media/logo.svg": "/foosball_labday/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/foosball_labday/index.html",
-    "main.073c9b0a.css.map": "/foosball_labday/static/css/main.073c9b0a.css.map",
-    "main.b2837d24.js.map": "/foosball_labday/static/js/main.b2837d24.js.map",
+    "main.b278ae3f.css.map": "/foosball_labday/static/css/main.b278ae3f.css.map",
+    "main.1de26b37.js.map": "/foosball_labday/static/js/main.1de26b37.js.map",
     "787.02852af1.chunk.js.map": "/foosball_labday/static/js/787.02852af1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b2837d24.js"
+    "static/css/main.b278ae3f.css",
+    "static/js/main.1de26b37.js"
   ]
 }
