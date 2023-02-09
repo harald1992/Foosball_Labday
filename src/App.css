@@ -4,6 +4,12 @@ html {
 }
 .navigation {
     display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+nav {
+    height: 100%;
 }
 /* 
 ul.navigation {
@@ -38,21 +44,25 @@ body {
 }
 .content {
     flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
-    padding: 20px;
+    padding: 16px;
+    overflow: auto;
 }
 header {
     background-color: white;
     border-bottom: 4px solid #00a41a;
     padding: 10px 0 0;
+    height: 100px;
 }
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 .menu-icon-width {
-    width: 33px;
+    width: 24px;
     color: white;
+    margin-bottom: 2px;
 }
 
 .chevron-icon-width {
@@ -60,16 +70,28 @@ img {
 }
 
 ul li {
-    float: left;
     list-style: none;
-    margin: 0 27px 10px -10px;
-    padding: 10px 0 10px 0;
     background-color: #00a41a;
     width: 20%;
-    height: 36px;
+    height: 72px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
 }
 
 footer {
+    height: 72px;
   background: #00A41A;
   color: white;
   width: 100%;
