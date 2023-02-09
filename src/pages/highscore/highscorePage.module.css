@@ -1,0 +1,29 @@
+ol {
+  padding: 0;
+}
+
+ol li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  /* margin-left: -20px; */
+}
+
+ol li:nth-child(even) {
+  background: #bae6c1;
+  color: #00a41a;
+}
+ol li:nth-child(odd) {
+  background: #ffd1b3;
+  color: #ff6600;
+}
+
+li div {
+  display: inline-block;
+  font-size: 20px;
+}
+
+li div:nth-child(2) {
+  float: right;
+  font-weight: 700;
+}
