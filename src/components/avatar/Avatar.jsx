@@ -1,6 +1,7 @@
 import styles from "./Avatar.module.css";
 import avatar from "../../assets/avatar.jpeg";
 import edit from "../../assets/edit.png";
+import { useState } from "react";
 
 export const Avatar = ({ className }) => {
     const [selectedImage, setSelectedImage] = useState(null);
