@@ -15,45 +15,47 @@ import { MediaGallery } from "./pages/media/MediaGallery";
 
 export function App() {
   return (
-    <>
+    <div className="app-container">
       <header>
-        <img src={logo} />
+        <img src={logo} alt="logo"/>
       </header>
 
-      <Routes>
-        <Route path="/reserve" element={<Home />} />
-        <Route path="/media" element={<MediaGallery />} />
-        <Route path="/highscore" element={<Highscore />} />
-        <Route path="/avatar" element={<AvatarPage />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/reserve" element={<Home />} />
+          <Route path="/media" element={<MediaGallery />} />
+          <Route path="/highscore" element={<Highscore />} />
+          <Route path="/avatar" element={<AvatarPage />} />
+        </Routes>
+      </div>
 
       <footer className="footer">
         <nav>
           <ul className="navigation">
             <li>
               <Link to="/reserve">
-                <img className="menu-icon-width" src={faCalendarDay} />
+                <img className="menu-icon-width" src={faCalendarDay} alt="calendar icon"/>
               </Link>
             </li>
             <li>
               <Link to="/media">
-                <img className="menu-icon-width" src={faCameraRetro} />
+                <img className="menu-icon-width" src={faCameraRetro} alt="camera icon"/>
               </Link>
             </li>
             <li>
               <Link to="/avatar">
-                <img className="menu-icon-width" src={faUsers} />
+                <img className="menu-icon-width" src={faUsers} alt="users icon"/>
               </Link>
             </li>
             <li>
               <Link to="/highscore">
-                <img className="menu-icon-width" src={faStar} />
+                <img className="menu-icon-width" src={faStar} alt="star icon"/>
               </Link>
             </li>
           </ul>
         </nav>
       </footer>
-    </>
+    </div>
   );
 }
 

@@ -20,10 +20,18 @@ ul.navigation {
 html, body {
   /* IE 10-11 didn't like using min-height */
   height: 100%;
+  overflow: hidden;
 }
 body {
   display: flex;
   flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
 }
 .content {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
@@ -61,9 +69,6 @@ ul li {
 footer {
   background: #00A41A;
   color: white;
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   text-align: center;
   flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
