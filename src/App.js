@@ -8,7 +8,7 @@ export function App() {
   return (
     <>
       <nav>
-        <ul class="navigation">
+        <ul className="navigation">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/reserve">Reserve</Link></li>
         </ul>
