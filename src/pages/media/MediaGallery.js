@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './MediaGallery.module.css';
+import { MediaGalleryItem } from './MediaGalleryItem';
+import { MediaGalleryUpload } from './MediaGalleryUpload';
 
 export const MediaGallery = () => {
   const [files, setFiles] = useState([]);
@@ -33,29 +35,4 @@ export const MediaGallery = () => {
       <MediaGalleryUpload onUpload={onUpload} url={url} />
     </div>
   );
-}
-
-function MediaGalleryItem(props) {
-  return (
-    <div className={styles.item}>
-      <div className={styles.image}>
-        <img src={props.url} alt={props.title} />
-      </div>
-      <div className={styles.title}>
-        <span>{props.title}</span>
-      </div>
-    </div>
-  );
-}
-
-function MediaGalleryUpload(props) {
-  function onUploadClick() {
-    document.getElementById('file-input').click();
-  }
-  return (
-    <div className={styles.upload}>
-      <button onClick={onUploadClick}>Add Image</button>
-      <input id="file-input" type="file" onChange={props.onUpload} value={props.url} hidden/>
-    </div>
-  )
 }
