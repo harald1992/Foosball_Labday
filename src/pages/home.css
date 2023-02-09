@@ -1,0 +1,52 @@
+.home-header {
+    display: flex;
+
+}
+
+
+.home-header div {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-header p {
+    padding: 24px;
+    background: #eee;
+    color: #F67600;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-header p span{
+    color: #777;
+    display: block;
+    font-size: 16x;
+    font-weight: normal;
+}
+
+.home-header button {
+    padding: 12px;
+    background: none;
+    color: #00A41A;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    flex-basis: 20px;
+}
+
+.home-header input[type="radio"] {
+    display: none;
+}
+
+.home-header input[type="radio"]:checked + label p,
+.home-header input[type="radio"]:checked + label p span {
+    background: #00A41A;
+    color: #fff;
+}
+
+.home-header p.today {
+    outline: 2px solid #00A41A;
+}

@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import { Reserve } from './pages/Reserve';
-import { Home } from './pages/Home';
+import Home from './pages/Home';
 
 export function App() {
   return (
     <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/reserve" element={<Reserve />} />
+      </Routes>
       <nav>
         <ul className="navigation">
           <li><Link to="/">Home</Link></li>
@@ -14,10 +17,6 @@ export function App() {
         </ul>
       </nav>
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/reserve" element={<Reserve />} />
-      </Routes>
     </>
   )
 }
