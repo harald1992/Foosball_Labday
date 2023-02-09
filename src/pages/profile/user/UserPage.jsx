@@ -18,8 +18,6 @@ export const UserPage = () => {
             <br />
 
             <AvatarPage />
-            <Byline storeName="name" bylineText="edit your name" />
-            <hr />
         </div>
     );
 };
