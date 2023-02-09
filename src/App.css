@@ -69,6 +69,7 @@ img {
   width: 24px;
   color: white;
   margin-bottom: 2px;
+  filter: invert(1);
 }
 
 .chevron-icon-width {

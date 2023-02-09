@@ -8,7 +8,7 @@ import faSearch from "./assets/search.svg";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
 import { Reserve } from "./pages/Reserve";
-import { Home } from "./pages/Home";
+import  Home  from "./pages/Home";
 import { AvatarPage } from "./pages/avatar/AvatarPage";
 import { HighscorePage } from "./pages/highscore/highscorePage";
 import { CompetitionPage } from "./pages/competition/CompetitionPage";
