@@ -1,16 +1,16 @@
-import logo from "./logo_CapFoosballCup.svg";
-import faStar from "./star.svg";
-import faCalendarDay from "./calendar-day.svg";
-import faCameraRetro from "./camera-retro.svg";
-import faUsers from "./users.svg";
+import logo from "./assets/logo_CapFoosballCup.svg";
+import faStar from "./assets/star.svg";
+import faCalendarDay from "./assets/calendar-day.svg";
+import faCameraRetro from "./assets/camera-retro.svg";
+import faUsers from "./assets/users.svg";
 import faChevronRight from "./chevron-right.svg";
 import faChevronLeft from "./chevron-left.svg";
 import "./App.css";
 import { Link, Route, Routes } from "react-router-dom";
-import { Highscore } from "./pages/Highscore";
 import { Reserve } from "./pages/Reserve";
 import { Home } from "./pages/Home";
 import { AvatarPage } from "./pages/avatar/AvatarPage";
+import { HighscorePage } from "./pages/highscore/highscorePage";
 
 export function App() {
   return (
@@ -22,7 +22,7 @@ export function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reserve" element={<Reserve />} />
-        <Route path="/highscore" element={<Highscore />} />
+        <Route path="/highscore" element={<HighscorePage />} />
         <Route path="/avatar" element={<AvatarPage />} />
       </Routes>
 

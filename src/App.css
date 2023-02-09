@@ -17,7 +17,8 @@ ul.navigation {
   background-color: grey;
 } */
 
-html, body {
+html,
+body {
   /* IE 10-11 didn't like using min-height */
   height: 100%;
 }
@@ -25,13 +26,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+h1 {
+  color: #ff6600;
+}
+
 .content {
   flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
   padding: 20px;
 }
 header {
   background-color: white;
-  border-bottom: 4px solid #00A41A;
+  border-bottom: 4px solid #00a41a;
   padding: 10px 0 0;
 }
 
@@ -53,13 +59,13 @@ ul li {
   list-style: none;
   margin: 0 27px 10px -10px;
   padding: 10px 0 10px 0;
-  background-color: #00A41A;
+  background-color: #00a41a;
   width: 20%;
   height: 36px;
 }
 
 footer {
-  background: #00A41A;
+  background: #00a41a;
   color: white;
   position: fixed;
   left: 0;
