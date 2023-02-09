@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import styles from "./Byline.module.css";
 import edit from "../../assets/edit.png";
 
-export const Byline = ({ className }) => {
-    const [byline, setByline] = useState("cool byline");
+export const Byline = ({ className, bylineText, storeName }) => {
+    const [byline, setByline] = useState(bylineText);
     const [showEdit, setShowEdit] = useState(false);
     const [bylineTemp, setBylineTemp] = useState("");
 
     const handleEditName = (event) => {
         const sentence = event.target.value;
         setByline(sentence);
-        localStorage.setItem("byline", sentence);
+        localStorage.setItem(storeName, sentence);
     };
 
     const handleShowEdit = () => {
