@@ -1,10 +1,12 @@
 import styles from "./ProfilePage.module.css";
 import { Link } from 'react-router-dom';
+import faUsers from "../../assets/users.svg";
+import faUserFriends from "../../assets/user-friends.svg";
 
 export const ProfilePage = () => {
     const teams = [];
     const team1 = {
-        name: 'Your Team Name', members: [{ name: 'Henk' }, { name: 'Valerie' }]
+        name: `You do not have a team yet. Go to 'team' to create one`, members: []
     };
 
 
@@ -15,13 +17,20 @@ export const ProfilePage = () => {
 
     return (
         <div className={styles.userpage}>
+
             <ul className={styles["profile-nav"]} >
-                <li><Link to="/user">User</Link></li>
-                <li><Link to="/team">Team</Link></li>
+                <li>
+                    <Link to="/user">User <img className="menu-icon-width" src={faUsers} /></Link>
+                </li>
+                <li>
+                    <Link to="/team">Team <img className="menu-icon-width" src={faUserFriends} />
+                    </Link></li>
 
             </ul>
-            <hr />
+
             <h1>{title}</h1>
+
+            <hr />
             <hr />
             <div>
 
