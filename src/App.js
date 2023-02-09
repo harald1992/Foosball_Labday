@@ -19,7 +19,7 @@ export function App() {
   return (
     <div className="app-container">
       <header>
-        <img src={logo} />
+        <img src={logo} alt="logo" />
       </header>
 
       <div className="content">
@@ -32,40 +32,51 @@ export function App() {
         </Routes>
       </div>
 
-      <footer class="footer">
+      <footer className="footer">
         <nav>
           <ul className="navigation">
             <li>
-              <Link to="/">
+              <Link to="/" className="link">
                 <img
-                  class="menu-icon-width"
+                  className="menu-icon-width"
                   src={faCalendarDay}
+                  alt="icon"
                 />
               </Link>
             </li>
             <li>
-              <Link to="/media">
+              <Link to="/media" className="link">
                 <img
-                  class="menu-icon-width"
+                  className="menu-icon-width"
                   src={faCameraRetro}
+                  alt="icon"
                 />
               </Link>
             </li>
             <li>
-              <Link to="/avatar">
-                <img class="menu-icon-width" src={faUsers} />
+              <Link to="/avatar" className="link">
+                <img 
+                  className="menu-icon-width"
+                  src={faUsers} 
+                  alt="icon"
+                />
               </Link>
             </li>
             <li>
-              <Link to="/highscore">
-                <img class="menu-icon-width" src={faStar} />
+              <Link to="/highscore" className="link">
+                <img 
+                  className="menu-icon-width"
+                  src={faStar}
+                  alt="icon"
+                />
               </Link>
             </li>
             <li>
-              <Link to="/competition">
+              <Link to="/competition" className="link">
                 <img
-                  class="menu-icon-width"
+                  className="menu-icon-width"
                   src={faUserFriends}
+                  alt="icon"
                 />
               </Link>
             </li>
