@@ -27,27 +27,27 @@ export function App() {
         <Route path="/avatar" element={<AvatarPage />} />
       </Routes>
 
-      <footer class="footer">
+      <footer className="footer">
         <nav>
           <ul className="navigation">
             <li>
               <Link to="/reserve">
-                <img class="menu-icon-width" src={faCalendarDay} />
+                <img className="menu-icon-width" src={faCalendarDay} />
               </Link>
             </li>
             <li>
               <Link to="/media">
-                <img class="menu-icon-width" src={faCameraRetro} />
+                <img className="menu-icon-width" src={faCameraRetro} />
               </Link>
             </li>
             <li>
               <Link to="/avatar">
-                <img class="menu-icon-width" src={faUsers} />
+                <img className="menu-icon-width" src={faUsers} />
               </Link>
             </li>
             <li>
               <Link to="/highscore">
-                <img class="menu-icon-width" src={faStar} />
+                <img className="menu-icon-width" src={faStar} />
               </Link>
             </li>
           </ul>
