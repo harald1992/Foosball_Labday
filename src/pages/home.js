@@ -34,7 +34,6 @@ function Home() {
         {days.map((day) => <Day offset={day} week={week} /> )}
         <button onClick={() => setWeek(week + 1)}>{'>'}</button>
 
-
       </div>
     </div>
   );
