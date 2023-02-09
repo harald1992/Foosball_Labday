@@ -46,6 +46,7 @@ function Home() {
 
   return (
     <main className="home">
+    <h1>Reserve</h1>
       <div className="home-header">
         <button onClick={() => setWeek(week - 1)}><img src={faChevronLeft}  alt="Previous"/></button>
         {days.map((day, index) => <Day key={index} setDate={setMyDate} offset={day} week={week} /> )}

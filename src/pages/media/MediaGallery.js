@@ -27,6 +27,7 @@ export const MediaGallery = () => {
 
   return (
     <div className={styles.wrapper}>
+      <h1>Wall of Shame</h1>
       <div className={styles.gallery}>
         {
           files.map((media, i) => <MediaGalleryItem key={media.id} url={media.url} title={media.title} />)

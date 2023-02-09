@@ -19,6 +19,7 @@
 .item {
   flex-basis: 30%;
   height: 150px;
+  overflow:hidden;
 }
 
 .image {
@@ -26,7 +27,7 @@
   height: 120px;
 } 
 
-.image img {
+.item img {
   object-fit: cover;
   max-width: 100%;
   min-height: 100%;
